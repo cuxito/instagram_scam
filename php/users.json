@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "users": [
         {
@@ -33,4 +34,41 @@
             "password": "cvbcvbc"
         }
     ]
+=======
+{
+    "users": [
+        {
+            "username": "o@o.com",
+            "password": "sddasd"
+        },
+        {
+            "username": "sdfsdf@gmail.com",
+            "password": "sdfsddfsd"
+        },
+        {
+            "username": "sergioarroyoperez.daw2020@riberadeltajo.es",
+            "password": "ksdfkjsj"
+        },
+        {
+            "username": "o@o.com",
+            "password": "jhsjjs"
+        },
+        {
+            "username": "o@o.com",
+            "password": "zfsf"
+        },
+        {
+            "username": "sdfsdf@gmail.com",
+            "password": "fsdfdsf"
+        },
+        {
+            "username": "ssdfsdkfksd@jsjdja.com",
+            "password": "asda"
+        },
+        {
+            "username": "cvbcvb@jsdjf.com",
+            "password": "cvbcvbc"
+        }
+    ]
+>>>>>>> 1da559525e8872885c0f2451e77fd6e4702ef352
 }
