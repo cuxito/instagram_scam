@@ -5,7 +5,17 @@ if (isset($_POST['submit'])) {
     $login_tmp = array('username' => $_POST['username'], 'password' => $_POST['password']);
     file_put_contents('login_tmp.json', json_encode($login_tmp));
     exec('python login.py', $res);
+    
+    
+    
+    
+    $res = json_decode($res[0], true);
     var_dump($res);
+    if(!isset($res['autentificathed']) || (isset($res['autentficated']) && $res['autentificated']!= true)){
+        echo'nao nao';
+    } else{
+        echo'padentro';
+    }
 }
 
 
