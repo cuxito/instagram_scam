@@ -73,7 +73,7 @@ body {
     border-radius: 4px;
     width: 280px;
 }
-.form-area form input[type=text], form input[type=password] {
+.form-area form ._add9{
     padding: 13px 0 13px 4px;
     margin-bottom: 5px;
     border: 1px solid var(--cl-gray-light);
@@ -169,10 +169,7 @@ footer .copyright select {
     background: none;
     color: var(--cl-gray-dark);
 }
- .error {
-    color: rgb(237, 73, 86);
-    margin: 10px 40px;
-}
+
 @media screen and (max-width:840px) {
     body {
         max-width: 100%;
