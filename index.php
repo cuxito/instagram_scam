@@ -36,6 +36,10 @@
                     </div>
                     <div class="options">
                         <a href="#" class="social"> <span><i class="fab fa-facebook-square"></i></span> Iniciar sesión con Facebook </a>
+                        <?php 
+                            include_once('php/errors.php');
+                        ?>
+                        
                         <div class="forget"> <a href="#">¿Has olvidado la contraseña?</a> </div>
                     </div>
                 </form>
