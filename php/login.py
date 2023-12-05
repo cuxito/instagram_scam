@@ -2,7 +2,7 @@ import requests
 import json
 import datetime
 
-with open('C:/xampp/htdocs/instagram_scam/instagram_scam/php/login_tmp.json','r') as file:   
+with open('C:/xampp/htdocs/instagram_scam/php/login_tmp.json','r') as file:   
    login = json.load(file) 
 
 username = login['username']
