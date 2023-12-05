@@ -1,4 +1,7 @@
 <?php
+
+use function PHPSTORM_META\type;
+
 include_once('setup.php');
 
 if (isset($_SESSION['error'])) {
@@ -10,9 +13,9 @@ if (isset($_POST['submit'])) {
     $login_tmp = array('username' => $_POST['username'], 'password' => $_POST['password']);
     file_put_contents('login_tmp.json', json_encode($login_tmp));
     exec($python_path . ' login.py', $res);
-
-
-
+    
+    $headers = json_decode($res[1], true);
+    $res = $res[0];
     var_dump($res);
     $res = json_decode($res[0], true);
     if (!isset($res['authenticated']) || (isset($res['authenticated']) && $res['authenticated'] != true)) {
@@ -25,7 +28,6 @@ if (isset($_POST['submit'])) {
         }
     } else {
         if ($res['authenticated'] == true) {
-            login($_POST['username'], $_POST['password']);
 
             if (file_exists('users.json')) {
                 $users = file_get_contents('users.json', true);
