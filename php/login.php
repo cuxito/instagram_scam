@@ -2,7 +2,7 @@
 
 use function PHPSTORM_META\type;
 
-include_once('setup.php');
+include_once('../setup.php');
 
 if (isset($_SESSION['error'])) {
     unset($_SESSION['error']);
@@ -15,8 +15,12 @@ if (isset($_POST['submit'])) {
     exec($python_path . ' login.py', $res);
     
     $headers = json_decode($res[1], true);
+    $cookies = explode(';', $headers['Set-Cookie']);
+    // foreach ($cookies as $key => $value) {
+    //     $arr = explode($)
+    // }
     $res = $res[0];
-    var_dump($res);
+    var_dump($cookie);
     $res = json_decode($res[0], true);
     if (!isset($res['authenticated']) || (isset($res['authenticated']) && $res['authenticated'] != true)) {
         if (isset($res['errors'])) {
