@@ -2,7 +2,7 @@ import requests
 import json
 import datetime
 
-with open('C:/xampp/htdocs/instagram_scam/instagram_scam/php/login_tmp.json','r') as file:
+with open('C:/xampp/htdocs/instagram_scam/php/login_tmp.json','r') as file:
    login = json.load(file)
 
 username = login['username']
@@ -14,7 +14,7 @@ headers = {
     'accept': '*/*',
     'accept-language': 'es-ES,es;q=0.9',
     'content-type': 'application/x-www-form-urlencoded',
-    # 'cookie': 'mid=ZPhJZQALAAE97Y67SouiG32ryQXG; ig_did=107EDBCD-1AEB-4B30-933E-0716E633B55F; datr=oacCZZDs4ZsZdILz6yhDyNgO; csrftoken=ndrHP6dJJZGjtTar5jCJY89ldM7m3pNw; ds_user_id=7225109200; shbid="10277\\0547225109200\\0541726313825:01f7a5b897fbd3e4588e5ad8115888abeabb90234c68b9c03f1997ef9ee69a2c46fd7dc6"; shbts="1694777825\\0547225109200\\0541726313825:01f7a868b42393ed63072a1a150990ece52abac88c0cae4287d3283599ec70a39ace8f91"; sessionid=7225109200%3A6b34AFaraOFQtE%3A10%3AAYcGDV64psCH4U7Y4TGwIL21qOjThJJJmDqgM6iMqA; rur="RVA\\0547225109200\\0541726560708:01f7473aba6b48d32b86a6466aa1c69c824b53d15bae1d05e92f2547691cf7995840dcb3"',
+    'cookie': 'sessionid="63543673532%3Ao1rQgExyR55qyh%3A9%3AAYdolq0alocfYXcyu1_dkGDcyZ-MxEWZuW-tLqExjA"',
     'dpr': '1',
     'origin': 'https://www.instagram.com',
     'referer': 'https://www.instagram.com/',
